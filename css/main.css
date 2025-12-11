@@ -1,0 +1,55 @@
+@charset "UTF-8";
+body {
+  background-color: #663A1F;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  color: white;
+}
+
+.login-button {
+  /* Estilos específicos del botón de compra aquí */
+  background-color: white;
+  color: #663a1f;
+}
+
+.logo {
+  /* Estilos del logo */
+  width: 25px;
+  height: 25px;
+}
+
+.flex-navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #212529;
+  padding: 10px 30px;
+  color: white;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.nav-links li {
+  margin: 0 15px;
+}
+.nav-links a {
+  color: white;
+  text-decoration: none;
+}
+
+.flex-navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #212529;
+  padding: 10px 30px;
+  color: white;
+}/*# sourceMappingURL=main.css.map */

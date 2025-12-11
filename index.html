@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="es-CL">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Marite">
+    <title>Chucao Coffee 2.0 - Tarea 1 modulo 3</title>
+
+    <!--preconnect para fuentes externas google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<!--fuente tipográfica roboto-->
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+<!--kit de iconos fontawesome-->
+<script src="https://kit.fontawesome.com/a2dbb53aa9.js" crossorigin="anonymous"></script>
+
+<!--jQuery-->
+<script src="https://code.jquery.com/jquery-3.7.1.slim.min.js" integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8=" crossorigin="anonymous"></script>
+
+<!--bootstrap-->
+<link rel="stylesheet"
+href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
+crossorigin="anonymous">
+
+<!--css-->
+<link rel="stylesheet" href="scss/css/main.css">
+</head>
+
+
+<body>
+
+<header class="hero-slider">
+        
+        <nav class="flex-navbar">
+            <div class="logo"><img src="css/img/logotipo-chucao-coffee.png" alt="logotipo-chucao-coffee"></div>
+            <ul class="nav-links">
+                <li><a href="Home">Home</a></li>
+                <li><a href="Productos">Productos</a></li>
+                <li><a href="Contacto">Contacto</a></li>
+            </ul>
+            <button class="login-button">Comprar</button>
+        </nav>
+        
+        <div id="productCarousel" class="carousel slide" data-ride="carousel">
+            
+            <ol class="carousel-indicators">
+                <li data-target="#productCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#productCarousel" data-slide-to="1"></li>
+                <li data-target="#productCarousel" data-slide-to="2"></li>
+            </ol>
+            
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./css/img/foto-slider-1.jpg" class="d-block w-100" alt="Slider 1">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Oferta Especial</h5>
+                        <p>Descubre los mejores granos.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="./css/img/foto-slider-4.jpg" class="d-block w-100" alt="Slider 2">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Orígenes Únicos</h5>
+                        <p>Café de altura con tueste artesanal.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="./css/img/foto-slider-3.jpg" class="d-block w-100" alt="Slider 3">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Todo para tu Barista interior</h5>
+                        <p>Máquinas, molinos y accesorios premium.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <a class="carousel-control-prev" href="#productCarousel" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Anterior</span>
+            </a>
+            <a class="carousel-control-next" href="#productCarousel" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Siguiente</span>
+            </a>
+        </div>
+    </header>
+
+    <main class="container py-5">
+        <h2 class="text-center mb-5 text-light">🛒 Nuestros Productos Estrella</h2>
+
+        <div class="row products-grid">
+            
+            <div class="col-md-4 mb-4">
+                <div class="product-card">
+                    <img src="./css/img/etiqueta-cafe-1.png" class="card-img-top" alt="Café de Grano">
+                    <div class="card-body">
+                        <h5 class="card-title text-warning">Espresso Brasil</h5>
+                        <p class="card-text">Café con notas de chocolate, avellana y frutos secos. Alto en cafeína.</p>
+                        <p class="card-price text-success">$9.990</p>
+                        <a href="#" class="btn btn-primary btn-product">Añadir al Carrito</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-4">
+                <div class="product-card">
+                    <img src="./css/img/etiqueta-cafe-2.jpg" class="card-img-top" alt="cafe-blend">
+                    <div class="card-body">
+                        <h5 class="card-title text-warning">Filtro Reutilizable</h5>
+                        <p class="card-text">Blend Italiano.</p>
+                        <p class="card-price text-success">$11.990</p>
+                        <a href="#" class="btn btn-primary btn-product">Añadir al Carrito</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-4">
+                <div class="product-card">
+                    <img src="./css/img/cafetera.2.jpg" class="card-img-top" alt="Máquina Espresso">
+                    <div class="card-body">
+                        <h5 class="card-title text-warning">Máquina Espresso Compacta</h5>
+                        <p class="card-text">Prepara tu espresso como un profesional en casa.</p>
+                        <p class="card-price text-success">$49.990</p>
+                        <a href="#" class="btn btn-primary btn-product">Añadir al Carrito</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        </main>
+
+        <!--footer-->
+
+    </main>
+
+    <footer class="site-footer py-5">
+        <div class="container">
+            <div class="row">
+                
+                <div class="col-md-4 mb-4">
+                    <h5 class="footer-heading">Contacto</h5>
+                    <ul class="list-unstyled">
+                        <li><i class="fas fa-map-marker-alt"></i> Dirección: Av. Principal 123</li>
+                        <li><i class="fas fa-phone"></i> Teléfono: +56 9 1234 5678</li>
+                        <li><i class="fas fa-envelope"></i> Email: contacto@chucao.cl</li>
+                    </ul>
+                </div>
+
+                <div class="col-md-4 mb-4">
+                    <h5 class="footer-heading">Enlaces Rápidos</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Inicio</a></li>
+                        <li><a href="#">Productos</a></li>
+                        <li><a href="#">Historia</a></li>
+                        <li><a href="#">Términos y Condiciones</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-md-4 mb-4">
+                    <h5 class="footer-heading">Síguenos</h5>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f fa-2x"></i></a>
+                        <a href="#"><i class="fab fa-instagram fa-2x"></i></a>
+                        <a href="#"><i class="fab fa-twitter fa-2x"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <hr class="footer-separator">
+            <div class="text-center text-muted pt-3">
+                &copy; 2025 Chucao Coffee. Todos los derechos reservados.
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.slim.min.js" integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+
+</body>
+</html>
+    
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+crossorigin="anonymous"></script>
+
+</body>
+</html>

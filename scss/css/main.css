@@ -1,0 +1,76 @@
+@charset "UTF-8";
+body {
+  background-color: #663A1F;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  color: white;
+}
+
+.login-button {
+  /* Estilos específicos del botón de compra aquí */
+  background-color: white;
+  color: #663a1f;
+}
+
+.card-price text-success {
+  color: orange;
+}
+
+.flex-navbar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.flex-navbar .logo {
+  width: 25px;
+  height: 25px;
+}
+.flex-navbar .nav-links a {
+  color: white;
+}
+
+.hero-slider {
+  position: relative;
+  width: 100%;
+  height: 500px;
+}
+
+.flex-navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #212529;
+  padding: 10px 30px;
+  color: white;
+}
+
+.site-footer {
+  background-color: #333;
+  color: #fff;
+}
+.site-footer a {
+  color: #ccc;
+}
+.site-footer a:hover {
+  color: #FFD700;
+  text-decoration: none;
+}
+.site-footer .footer-heading {
+  color: #FFD700;
+  margin-bottom: 20px;
+}
+.site-footer .social-links a {
+  margin-right: 15px;
+  color: #fff;
+}/*# sourceMappingURL=main.css.map */
