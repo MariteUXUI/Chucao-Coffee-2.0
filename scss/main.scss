@@ -10,8 +10,8 @@
 @use "components/button";
 @use "components/cards";
 
-@use"layout/navegation";
 @use "layout/page";
+@use "layout/footer";
 
 @use "pages/exercise";
 
@@ -19,7 +19,4 @@
 @use "themes/default";
 
 @use "vendors/normalice";
-
-@use "layout/footer";
-
 
